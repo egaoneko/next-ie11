@@ -1,0 +1,27 @@
+{
+  "env": {
+    "development": {
+      "compact": false,
+      "presets": ["next/babel"]
+    },
+    "production": {
+      "compact": false,
+      "presets": ["next/babel"]
+    }
+  },
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-env": {
+          "targets": {
+            "browsers": ["last 2 versions", "safari >= 7", "ie11"],
+            "useBuiltIns": "entry",
+            "corejs": 3
+          }
+        }
+      }
+    ]
+  ],
+  "plugins": []
+}
